@@ -8,3 +8,7 @@ void congratulateUser(const char *userName)
 
 	MessageBox(hWnd, buffer, "New Message", MB_OK);
 }
+
+int main(){
+  return 0;
+}
