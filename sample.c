@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define BUFSIZE 256
-
-// This program prints the size of a specified file in bytes
-int main(int argc, char** argv) {
-char cmd[BUFSIZE] = "wc -c < ";
-strcat(cmd, argv[1]);
-system(cmd);
+int main(int argc, char **argv) {
+char *items[] = {"boat", "car", "truck", "train"};
+int index = atoi(argv[1]);
+printf("You selected %s\n", items[index-1]);
 }
